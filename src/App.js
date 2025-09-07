@@ -1,10 +1,8 @@
-import './App.css';
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="App">
-        <h1 className="text-3xl font-bold text-red-700">Building Netflix GPT !!!</h1>
-    </div>
+    <Main/>
   );
 }
 
