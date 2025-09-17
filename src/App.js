@@ -1,8 +1,14 @@
+import { Provider } from "react-redux";
 import Main from "./components/Main";
+import appStore from "./utils/appStore";
 
 function App() {
+
   return (
-    <Main/>
+    <Provider store={appStore}>
+      <Main/>
+    </Provider>
+    
   );
 }
 

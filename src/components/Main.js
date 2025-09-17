@@ -11,6 +11,10 @@ const Main = () => {
     {
       "path": "/login",
       "element": <Login/>
+    },
+    {
+      "path": "/browse",
+      "element": <Browse/>
     }
   ])
   return <>
