@@ -1,26 +1,32 @@
 # Building prerequisites
 
-1. Create react application using create-react-app
-2. Setup tailwind version 3
-3. Header
-4. Routing using react router
-5. Login Form
-6. SignUp Form
-7. Form Validation
-8. useRef Hook
-9. Firebase setup
-10. Deploying app to production
-11. Create Sign up user account in firebase
-12. Create sign in using firebase for authentication
-13. Create a redux store for saving user info
-14. Create Sign out feature
-15. AuthSigninSignout listener is moved to Header page so that it can check if user is signed in or not and redirect to /browse or /login accordingly
-16. Bug :
-    Even though user is signed out /browse works (which is wrong)
-    Even though user is signed in login works (which is wrong)
-    Fix:
-    a. when user is signed in , navigate to /browse
-    b. when user is signed out , navigate to /login
+- Create react application using create-react-app
+- Setup tailwind version 3
+- Header
+- Routing using react router
+- Login Form
+- SignUp Form
+- Form Validation
+- useRef Hook
+- Firebase setup
+- Deploying app to production
+- Create Sign up user account in firebase
+- Create sign in using firebase for authentication
+- Create a redux store "appStore" for storing loggedin user from firebase
+- Create a userSlice for storing logged in user info
+- Create Sign out feature
+- AuthSigninSignout listener is moved to Header page so that it can check if user is signed in or not and redirect to /browse or /login accordingly
+- Bug :
+  a. Even though user is signed out /browse works (which is wrong)
+  b. Even though user is signed in login works (which is wrong)
+  Fix:
+  a. when user is signed in , navigate to /browse
+  b. when user is signed out , navigate to /login
+- Unsubscribe to onAuthStateChanged API whenever Header component is unmounted
+- Add hardcoded values to constants.js file
+- Register for TMDB API KEY and then use now playing movies API
+- Create a moviesSlice for storing NowPlayingMovies API list by creating a new custom hook "useNowPlayingMovies"
+-
 
 # Features
 

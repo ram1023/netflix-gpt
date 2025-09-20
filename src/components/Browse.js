@@ -1,11 +1,17 @@
+import useMovie from "../hooks/useMovie";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
+
+  useNowPlayingMovies();
+  const {movie, movieTrailerKey} = useMovie();
   return <>
   <Header/>
-  <div className="pt-28">
-  <h1 className="text-3xl m-2 p-2 text-center font-bold"> Welcome to your netflix account....You can browse your content here!!! </h1>
-  </div>
+  <MainContainer movie={movie} movieTrailerKey={movieTrailerKey} />
+  <SecondaryContainer/>
   </>
 }
 

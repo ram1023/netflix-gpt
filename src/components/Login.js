@@ -49,17 +49,17 @@ const Login = () => {
               // Means user is already signed in
               // To sign in a different user then use sign in method
              const userCredential =  await createUserWithEmailAndPassword(auth, enteredEmail, enteredPassword);
-              const user = userCredential.user;
-              console.log("signed up user : ", user);
-              console.log("username value is : ", enteredName);
-              console.log("email value is : ", enteredEmail);
-              console.log("password value is : ", enteredPassword);
+              //const user = userCredential.user;
+              //console.log("signed up user : ", user);
+              //console.log("username value is : ", enteredName);
+              //console.log("email value is : ", enteredEmail);
+              //console.log("password value is : ", enteredPassword);
               await updateProfile(auth.currentUser, {
                 displayName: enteredName
               });
                 // Profile updated!
                 if(auth.currentUser) await auth.currentUser.reload(); 
-                console.log("Updated displayName for user ", auth.currentUser);
+               // console.log("Updated displayName for user ", auth.currentUser);
                 const {displayName, email, emailVerified} = auth.currentUser;
                 dispatch(removeUser());
                 dispatch(addUser({name: displayName ,email: email, emailVerified: emailVerified}));
@@ -69,7 +69,7 @@ const Login = () => {
             //Sign in user only if user has signed up before with firebase
             const userCredential = await signInWithEmailAndPassword(auth, enteredEmail, enteredPassword);
             const user = userCredential.user;
-            console.log("user signed in : ", user);
+           // console.log("user signed in : ", user);
             const {displayName, email, emailVerified} = user; 
             dispatch(addUser({name: displayName ,email: email, emailVerified: emailVerified}));
           }
