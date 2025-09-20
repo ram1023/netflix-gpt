@@ -26,7 +26,7 @@
 - Add hardcoded values to constants.js file
 - Register for TMDB API KEY and then use now playing movies API
 - Create a moviesSlice for storing NowPlayingMovies API list by creating a new custom hook "useNowPlayingMovies"
--
+- Added Video Title and Video Trailer on /browse page by fetching video trailer from TMDB trailer key using "useMovie" custom hook
 
 # Features
 
