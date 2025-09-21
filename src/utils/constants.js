@@ -4,6 +4,8 @@ export const USER_LOGO = "https://occ-0-5690-3663.1.nflxso.net/dnm/api/v6/vN7bi_
 
 export const NOW_PLAYING_MOVIE_URL = "https://api.themoviedb.org/3/movie/now_playing?page=1"
 
+export const POPULAR_MOVIE_URL = "https://api.themoviedb.org/3/movie/popular?page=1"
+
 export const TMDB_FETCH_OPTIONS = {
   method: 'GET',
   headers: {
@@ -11,3 +13,5 @@ export const TMDB_FETCH_OPTIONS = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MTlhYjViM2MzOTgwNGM5M2ExNGY0ZGMyMjBjZTNlNyIsIm5iZiI6MTc1ODEzMjY1My44MTcsInN1YiI6IjY4Y2FmOWFkOGFiYTMzZDM2MzFmMjI3NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Phbb4lzSP1sC7HIPiZpLojz9k9Yl0f7Bz6wVaBYtn3s'
   }
 };
+
+export const MOVIE_CARD_URL = "https://image.tmdb.org/t/p/w500/";

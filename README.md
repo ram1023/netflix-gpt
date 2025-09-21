@@ -26,7 +26,9 @@
 - Add hardcoded values to constants.js file
 - Register for TMDB API KEY and then use now playing movies API
 - Create a moviesSlice for storing NowPlayingMovies API list by creating a new custom hook "useNowPlayingMovies"
-- Added Video Title and Video Trailer on /browse page by fetching video trailer from TMDB trailer key using "useMovie" custom hook
+- Created Main Container and added Video Title and Video Trailer on /browse page by fetching video trailer from TMDB trailer key using "useVideoTrailer" custom hook
+- useVideoTrailer custom hook fetches the trailer from nowPlayingMovies state in redux store and updates the state "videoTrailer" in redux-store
+- Created Secondary Container and added multiple movies lists using nowPlayingMovies and popularMovies from redux-store after fetching nowPlayingMovies and popularMovies using "useNowPlayingMovies" and "usePopularMovies" custom hooks
 
 # Features
 

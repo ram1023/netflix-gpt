@@ -54,13 +54,13 @@ const Header = () => {
     });
   }
 
-  return <div className="w-full h-28 fixed flex justify-between z-10">
-    <img className=" w-1/6 mx-40 " src={NETFLIX_BG_LOGO} alt="Netflix Logo"/>
+  return <div className="w-full h-20 fixed flex justify-between z-30 bg-black">
+    <img className=" w-[200px] mx-20 " src={NETFLIX_BG_LOGO} alt="Netflix Logo"/>
 
-    {userStore && <div className="flex h-12 my-7 mr-6 justify-around items-center">
+    {userStore && <div className="flex h-12 my-7 mr-6 justify-around items-start">
       <img src={USER_LOGO} alt="UserIcon"/>
       <span className="ml-3 text-xl text-white font-bold">{userStore.name}</span>
-      <button className="ml-3 text-xl text-white font-bold" onClick={handleSignOutButton}> Sign Out</button>
+      <button className="ml-3 text-xl text-white font-bold cursor-pointer" onClick={handleSignOutButton}> Sign Out</button>
     </div>}
     
   </div>
